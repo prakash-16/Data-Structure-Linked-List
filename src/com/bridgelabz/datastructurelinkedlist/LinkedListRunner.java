@@ -11,8 +11,8 @@ public class LinkedListRunner {
 		myLinkedList.add(mySecondNode);
 		myLinkedList.add(myThirdNode);
 		myLinkedList.printNodes();
-		myLinkedList.pop();
-		System.out.println("After deletion");
+		myLinkedList.popLast();
+		System.out.println("After deletion of last element");
 		myLinkedList.printNodes();
 	}
 
