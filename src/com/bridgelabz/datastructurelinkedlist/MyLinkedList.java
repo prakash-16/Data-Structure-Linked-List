@@ -18,8 +18,14 @@ public class MyLinkedList {
 		}
 		else {
 			INode tempNode = this.head;
-			this.head = node;
-			this.head.setNext(tempNode);
+			if(this.head.equals(this.tail)) {
+				tempNode.setNext(node);
+			}
+			else {
+				this.tail.setNext(node);
+			}
+			this.tail = node; 
+			
 		}
 	}
 	
