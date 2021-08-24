@@ -12,8 +12,11 @@ public class LinkedListRunner<K> {
 		myLinkedList.add(mySecondNode);
 		myLinkedList.add(myThirdNode);
 		myLinkedList.printNodes();
-		INode searchedNode = myLinkedList.search(mySecondNode);
-		System.out.println("The element of searched node is :-  " + searchedNode.getKey());
+		MyNode<Integer> myFourthNode = new MyNode<Integer>(40);
+		myLinkedList.addElementInLinkedList(mySecondNode, myFourthNode);
+		System.out.println("Linked list after adding element");
+		myLinkedList.printNodes();
+		
 		
 	}
 
