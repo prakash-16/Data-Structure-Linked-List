@@ -1,6 +1,7 @@
 package com.bridgelabz.datastructurelinkedlist;
 
-public class LinkedListRunner {
+public class LinkedListRunner<K> {
+	
 	
 	public static void main(String[] args) {
 		MyNode<Integer> myFirstNode = new MyNode<Integer>(56);
@@ -11,9 +12,9 @@ public class LinkedListRunner {
 		myLinkedList.add(mySecondNode);
 		myLinkedList.add(myThirdNode);
 		myLinkedList.printNodes();
-		myLinkedList.popLast();
-		System.out.println("After deletion of last element");
-		myLinkedList.printNodes();
+		INode searchedNode = myLinkedList.search(mySecondNode);
+		System.out.println("The element of searched node is :-  " + searchedNode.getKey());
+		
 	}
 
 }

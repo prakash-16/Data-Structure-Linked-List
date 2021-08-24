@@ -49,6 +49,18 @@ public class MyLinkedList {
 		tempNode.setNext(null);
 	}
 	
+	public INode search(INode node) {
+		INode tempNode = head;
+		while(tempNode != null) {
+			if(tempNode.getKey() == node.getKey()) {
+				return tempNode;
+			}
+			tempNode = tempNode.getNext();
+		}
+		System.out.println("Element is not in linekd list");
+		return null;
+	}
+	
 	public void printNodes() {
 		StringBuffer myNodes = new StringBuffer("My Nodes: ");
 		INode tempNode = head;
