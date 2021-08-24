@@ -3,6 +3,7 @@ package com.bridgelabz.datastructurelinkedlist;
 public class MyLinkedList {
 	private INode head;
 	private INode tail;
+	private int i = 1;
 	
 	public MyLinkedList() {
 		this.head = null;
@@ -27,6 +28,11 @@ public class MyLinkedList {
 			this.tail = node; 
 			
 		}
+	}
+	
+	public void insert(INode node) {
+		node.setNext(this.tail);
+		this.head.setNext(node); 
 	}
 	
 	public void printNodes() {

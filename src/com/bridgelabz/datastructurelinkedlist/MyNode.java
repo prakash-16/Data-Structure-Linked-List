@@ -2,7 +2,7 @@ package com.bridgelabz.datastructurelinkedlist;
 
 public class MyNode<K> implements INode<K> {
 
-	private K key;
+	public K key;
 	private INode next;
 
 	public MyNode(K key) {
